@@ -1,17 +1,72 @@
 <!DOCTYPE html>
 <html>
 
+<head>
+    <title>Choose Your Adventure</title>
+    <style>
+        h1 {
+            color: orangered;
+            border: 2px solid black;
+            padding: 20px;
+        }
+        
+        h2 {
+            color: brown;
+        }
+        
+        p {
+            color: rgb(21, 13, 260);
+            font-style: italic;
+        }
+        
+        body {
+            background-image: url(http://writm.com/wp-content/uploads/2016/09/youtube-banner2.jpg);
+            font-family: Verdana;
+        }
+    </style>
+    <!--how to center the background-image in the body -->
+</head>
+
 <body>
 
-    <p id="intro">Welcome to Choose Your Own Adventure!</p>
+    <h1 id="intro"><b>Welcome to Choose Your Own Adventure!</h1>
 
-    <p>This example demonstrates the <b>getElementById</b> method!</p>
-    <p>A <b>method</b> is an action that can be performed on HTML
-        elecments, such as adding/deleting.</p>
+    <h2>What is your ideal destination?</h2>
+
+    <!-- possibly use the code below but need to figure out how to display another question/field after 
+<form action="demo_form.asp">
+    First name: <input type="text" name="FirstName" value="Colleen"><br>
+    Last name: <input type="text" name="LastName" value="McInerney"><br>
+    <input type="submit" value="Submit">
+</form> 
+
+
+    <p>Where would you like to travel?</p>
+
+    Enter location: <input type="text" value="" oninput="myFunction()">
 
     <script>
-var myElement = document.getElementById("intro");
-document.getElementById("demo").innerHTML = "The text from the intro paragraph is" + myELement.innerHTML;
+function myFunction() {
+    alert("The value of the input field was changed.");
+}
+</script>
+
+-->
+
+    <div class="example">If you prefer somewhere tropical, chose button 1.</div>
+    <div class="example">If you prefer a place that lets you hit the slopes, chose button 2.</div>
+
+    <p>Select your answer from the buttons below</p>
+
+    <button onclick="location.href='http://cornucopia3d.e-oncontent.com/storeItems/Scenes/Sets/Pit02__tropical_pond__Vue_55_5_img.jpg';">Button 1</button>
+    <button onclick="location.href='http://christmasstockimages.com/free/winter/mountains_vista.jpg';">Button 2</button>
+
+    
+
+    <!-- rememebr that <script> tags need to be last on the page but before closing the <body> tag because they need to fire last -->
+
+    <script>
+confirm("I am ready!")
 </script>
 
 </body>
