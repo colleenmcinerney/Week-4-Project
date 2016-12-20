@@ -1,11 +1,11 @@
 h1 {
-    color: orangered;
+    color:mediumseagreen;
     border: 2px solid black;
     padding: 20px;
 }
 
 h2 {
-    color: brown;
+    color: navajowhite;
 }
 
 p {
@@ -14,7 +14,7 @@ p {
 }
 
 body {
-    background-image: url(http://writm.com/wp-content/uploads/2016/09/youtube-banner2.jpg);
+    background-image: url(http://cdn-media-2.lifehack.org/wp-content/files/2014/05/large_5641546877.jpg);
 
     background-size: cover;
     background-repeat: no-repeat;

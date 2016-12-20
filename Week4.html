@@ -11,37 +11,27 @@
 
     <h1 id="intro"><b>Welcome to Choose Your Own Adventure!</h1>
 
-    <h2>What is your ideal destination?<br>&nbsp;</h2>
+    <h2>How much would you like to spend this trip?<br>&nbsp;</h2>
 
-    <!-- possibly use the code below but need to figure out how to display another question/field after
-<form action="demo_form.asp">
-    First name: <input type="text" name="FirstName" value="Colleen"><br>
-    Last name: <input type="text" name="LastName" value="McInerney"><br>
-    <input type="submit" value="Submit">
-</form>
-
-
-    <p>Where would you like to travel?</p>
-
-    Enter location: <input type="text" value="" oninput="myFunction()">
-
-    <script>
-function myFunction() {
-    alert("The value of the input field was changed.");
-}
-</script>
-
--->
-
+<!--
     <div class="example">If you prefer somewhere tropical, chose button 1.</div>
     <div class="example">If you prefer a place that lets you hit the slopes, chose button 2.</div>
 
-    <p>Select your answer from the buttons below</p>
+    <p>Select your answer from the buttons below</p> 
 
     <button onclick="goToLocation('http://christmasstockimages.com/free/winter/mountains_vista.jpg')">Button 1</button>
-    <button onclick="location.href='http://christmasstockimages.com/free/winter/mountains_vista.jpg';">Button 2</button>
+    <button onclick="location.href='http://christmasstockimages.com/free/winter/mountains_vista.jpg';">Button 2</button> -->
 
+<button onclick="myFunction()">Cost</button>
 
+<script>
+function myFunction(){
+    var x = document.createElement("INPUT");
+    x.setAttribute("type", "number");
+    x.setAttribute("value", "100");
+    document.body.appendChild(x);
+}
+</script>
 
     <!-- rememebr that <script> tags need to be last on the page but before closing the <body> tag because they need to fire last -->
     <script src="main.js"></script>
